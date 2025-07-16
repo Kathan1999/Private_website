@@ -30,8 +30,10 @@
                     <h2 class="project-post-title">{{post.title}}</h2>
                     <p class="project-post-meta">{{post.timestamp}} <a href="#">{{post.author}}</a></p>
 
+                    <img src="{% static 'img/profile.jpeg' %}" alt="pictures" width="500" height="500">
                     <p>{{post.content|safe}}</p>
-                    <p><small>Slug: {{post.slug}}</small></a>
+                    <img src="{% static 'img/profile.jpeg' %}" alt="picture" width="500" height="500">
+                    <p><small>Slug: {{post.slug}}</small></p>
                     <hr>
                 </div>
             </div>

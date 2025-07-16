@@ -292,6 +292,9 @@
                                       {% else %}
                                         <span class="text-danger">Invalid Post Link</span>
                                       {% endif %}
+                                      {% if post.github_url %}
+                                      <a href="{{post.github_url}}">View on Github</a>
+                                      {% endif %}
                                   </div>
                               </div>
                           </div>

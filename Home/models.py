@@ -17,6 +17,7 @@ class Post(models.Model):
     timestamp = models.DateTimeField(blank=True)
     title = models.CharField(max_length=150)
     slug = models.CharField(max_length=130, unique=True, blank=True)
+    github_url = models.URLField(max_length=300, blank=True)
     content = models.TextField()
 
     def __str__(self):
