@@ -3,5 +3,5 @@ from django.urls import path
 
 urlpatterns = [
     path('', views.index, name="index"),
-    path('projectpost', views.ProjectPost, name="ProjectPost"),
+    path('home/projectpost/<slug:slug>/', views.projectpost, name="projectpost"),
 ]

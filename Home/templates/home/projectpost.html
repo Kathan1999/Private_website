@@ -27,11 +27,11 @@
     <body>
             <div class="container my-2">
                 <div class="project-post">
-                    <h2 class="project-post-title">add some title here</h2>
-                    <p class="project-post-meta">add date and time here by <a href="#">add author name here</a></p>
+                    <h2 class="project-post-title">{{post.title}}</h2>
+                    <p class="project-post-meta">{{post.timestamp}} <a href="#">{{post.author}}</a></p>
 
-                    <p>post some content here</p>
-                    <p><small>add slug here</small></a>
+                    <p>{{post.content|safe}}</p>
+                    <p><small>Slug: {{post.slug}}</small></a>
                     <hr>
                 </div>
             </div>

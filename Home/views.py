@@ -2,6 +2,7 @@ from django.shortcuts import render
 from Home.models import Contact
 from django.contrib import messages 
 from Home.models import Post
+from django.shortcuts import get_object_or_404
 # Create your views here.
 def index(request):
     allPosts = Post.objects.all()
@@ -14,7 +15,8 @@ def index(request):
         contact = Contact(name=name, email=email, subject=subject, message=message)
         contact.save()
         messages.success(request, "Your message has been successfully sent")
-    return render(request, 'index.html',context)
+    return render(request, 'home/index.html',context)
 
-def ProjectPost(request):
-    return render(request, 'projectpost.html')
+def projectpost(request, slug):
+    post = get_object_or_404(Post, slug=slug)
+    return render(request, 'home/projectpost.html', {'post':post})
