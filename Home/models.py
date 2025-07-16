@@ -11,10 +11,12 @@ class Contact(models.Model):
     def __str__(self):
         return self.email
     
-class Post1(models.Model):
+class Post(models.Model):
     sno = models.AutoField(primary_key=True)
+    author = models.CharField(max_length=100)
+    timestamp = models.DateTimeField(blank=True)
     title = models.CharField(max_length=150)
-    content = models.CharField(max_length=200)
+    content = models.TextField()
 
     def __str__(self):
         return self.title

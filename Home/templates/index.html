@@ -270,29 +270,36 @@
                 <!-- Education End -->
 
 
-                <!-- Portfolio Start -->
+                <!-- Project Start -->
                 <div class="container bg-white pt-5 pb-3">
                     <div class="row px-3">
                         <div class="col-12">
                             <h2 class="title position-relative pb-2 mb-4">Project Section</h2>
                         </div>
-                        <div class="post-wrapper">
-                            <div>
-                                {% for post1 in allPost1 %}
-                                <div class="post">
-                                    <img class="thumbnail" src="images/picture.png">
-                                    <div class="post-preview">
-                                        <h6 class="post-title">{{post1.title}}</h6>
-                                        <p class="post-intro">{{post1.content}}</p>
-                                        <a href="post1">Read More</a>
-                                    </div>
-                                </div>
-                                {% endfor %}
-                            </div>
+                        {% for post in allPosts %}
+                        <div class="row mb-2 container">
+                          <div class="col-md-12">
+                              <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                                  <div class="col p-4 d-flex flex-column position-static">
+                                      <strong class="d-inline-block mb-2 text-primary-emphasis">Project By {{post.author}}</strong>
+                                      <h3 class="mb-0">{{post.title}}</h3>
+                                      <div class="mb-1 text-body-secondary">{{post.timestamp}}</div>
+                                      <p class="card-text mb-auto">{{psot.content | truncatechars:300}}</p>
+                                      <a href="#" class="icon-link gap-1 icon-link-hover stretched-link">
+                                          Continue reading
+                  
+                                          <svg class="bi" aria-hidden="true">
+                                              <use xlink:href="#chevron-right"></use>
+                                          </svg>
+                                      </a>
+                                  </div>
+                              </div>
+                          </div>
                         </div>
+                        {% endfor %}
                     </div>
                 </div>
-                <!-- Portfolio End -->
+                <!-- Projct End -->
 
                 <!-- Contact Start -->
                 <div class="container bg-white py-5" id="contact">
