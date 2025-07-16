@@ -15,3 +15,6 @@ def index(request):
         contact.save()
         messages.success(request, "Your message has been successfully sent")
     return render(request, 'index.html',context)
+
+def ProjectPost(request):
+    return render(request, 'projectpost.html')
