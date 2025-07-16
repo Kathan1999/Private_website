@@ -1,5 +1,6 @@
 from django.shortcuts import render
 from Home.models import Contact
+from django.contrib import messages 
 # Create your views here.
 def index(request):
     if request.method == 'POST':
@@ -9,4 +10,5 @@ def index(request):
         message = request.POST.get('message')
         contact = Contact(name=name, email=email, subject=subject, message=message)
         contact.save()
+        messages.success(request, "Your message has been successfully sent")
     return render(request, 'index.html')
