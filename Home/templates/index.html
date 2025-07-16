@@ -1,0 +1,346 @@
+{% load static %}
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Kathan Sheth</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="Free Website Template" name="keywords">
+        <meta content="Free Website Template" name="description">
+
+        <!-- Favicon -->
+        <link href="{% static 'img/favicon.ico' %}" rel="icon">
+
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:wght@400;700&family=Poppins&display=swap" rel="stylesheet"> 
+
+        <!-- Font Awesome -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+        <!-- Libraries Stylesheet -->
+        <link href="{% static 'lib/owlcarousel/assets/owl.carousel.min.css' %}" rel="stylesheet">
+        <link href="{% static 'lib/lightbox/css/lightbox.min.css' %}" rel="stylesheet">
+
+        <!-- Customized Bootstrap Stylesheet -->
+        <link href="{% static 'css/style.css' %}" rel="stylesheet">
+        <style>
+            .s2{
+                background-color: #fff;
+                border-bottom: 1px solid #c1c1c1;
+                overflow: auto;
+            }
+            
+            #contact-form{
+                display: block;
+                max-width: 600px;
+                margin: 0 auto;
+                border: 1px solid #fff;
+                padding: 15px;
+                border-radius: 5px;
+                background-color: #eaeaea;
+                margin-bottom: 50px;
+            }
+            
+            #contact-form label{
+                line-height: 2.7em;
+            }
+            
+            #contact-form textarea{
+                min-height: 100px;
+                font-size: 14px;
+            }
+            
+            .input-field{
+                width: 100%;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                background-color: #fff;
+                border-radius: 5px;
+                border: 1px solid #c1c1c1;
+                font-size: 14px;
+            }
+            
+            #submit-btn{
+                margin-top: 10px;
+                width: 100%;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                color: #fff;
+                background-color: #eaeaea;
+                border: none;
+            }
+
+            .about-wrapper{
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+                padding-bottom: 5px;
+                padding-top: 5px;
+                gap:100px;
+            }
+            
+            
+            #skills{
+                margin-bottom: 50px;
+                display: flex;
+                justify-content: space-evenly;
+                background-color: rgb(251, 249, 243, 0.8);;
+            }
+            
+        </style>
+    </head>
+
+    <body data-spy="scroll" data-target=".navbar" data-offset="51">
+        <div class="wrapper">
+            <div class="sidebar">
+                <div class="sidebar-text d-flex flex-column h-100 justify-content-center text-center">
+                    <img class="w-100 img-fluid mb-4" src="{% static 'img/profile.jpeg' %}" alt="Image">
+                    <h1 class="mt-2">Kathan Sheth</h1>
+                    <div class="mb-4" style="height: 22px;">
+                        <h4 class="typed-text-output d-inline-block text-body"></h4>
+                        <div class="typed-text d-none">Fullstack Web Developer, Software Engineer</div>
+                    </div>
+                    <div class="d-flex align-items-end justify-content-between">
+                        <a href="{% static 'Kathan-Resume.pdf' %}" target="_blank" class="btn btn-block border-right">Download CV</a>
+                        <a href="#contact" class="btn btn-block btn-scroll">Contact Me</a>
+                    </div>
+                </div>
+                <div class="sidebar-icon d-flex flex-column h-100 justify-content-center text-right">
+                    <i class="fas fa-2x fa-angle-double-right text-primary"></i>
+                </div>
+            </div>
+            <div class="content">
+                <!-- About Start -->
+                <div class="container bg-white py-5">
+                    <div class="row px-3">
+                        <div class="col-12">
+                            <h2 class="title position-relative pb-2 mb-4">About Me</h2>
+                        </div>
+                        <div class="col-12">
+                            <p>A driven and technically proficient graduate of computer science with
+                                practical expertise in backend engineering, machine learning, and
+                                full-stack web development. Shown proficiency with contemporary
+                                technologies such as Python, React.Js , Django, RESTful APIs, and
+                                cloud deployment tools to create scalable apps. Eager to contribute to
+                                significant engineering teams and advance as a backend developer.</p>
+                            <div class="row">
+                                <div class="col-sm-6 py-1">
+                                    <h5 class="d-inline text-primary">Name:</h5> Kathan Sheth
+                                </div>
+                                <div class="col-sm-6 py-1">
+                                    <h5 class="d-inline text-primary">Birthday:</h5> 23 December 1999
+                                </div>
+                                <div class="col-sm-6 py-1">
+                                    <h5 class="d-inline text-primary">Degree:</h5> Bachelors 
+                                </div>
+                                <div class="col-sm-6 py-1">
+                                    <h5 class="d-inline text-primary">Experience:</h5> 2 Years
+                                </div>
+                                <div class="col-sm-6 py-1">
+                                    <h5 class="d-inline text-primary">Phone:</h5> +918460231299
+                                </div>
+                                <div class="col-sm-6 py-1">
+                                    <h5 class="d-inline text-primary">Email:</h5> shethkathan4@gmail.com
+                                </div>
+                                <div class="col-sm-6 py-1">
+                                    <h5 class="d-inline text-primary">Address:</h5> Vallabh Vidhyanagar, Gujarat, India
+                                </div>
+                                <div class="col-sm-6 py-1">
+                                    <h5 class="d-inline text-primary">Freelance:</h5> Available
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- About End -->
+
+
+                <!-- Skills Start -->
+                <div class="container bg-white py-5">
+                    <div class="about-wrapper">
+                        <h4>TOP EXPERTISE</h4>
+
+					<div id="skills">
+						<ul>
+							<li>Python</li>
+							<li>JavaScript</li>
+                            <li>React.js</li>
+                            <li>Django</li>
+                            <li>HTML/CSS</li>
+                            <li>Matplotlib</li>
+                            <li>TensorFlow</li>
+                            <li>Agile Methodology</li>
+						</ul>
+
+						<ul>
+							<li>RESTful APIs</li>
+                            <li>MongoDB</li>
+                            <li>Firebase</li>
+                            <li>Pandas</li>
+                            <li>Scikit-learn</li>
+                            <li>Docker</li>
+                            <li>Git</li>
+                            <li>Unit Testing</li>
+                        </ul>
+
+					</div>
+                    </div>
+                               
+                </div>
+                <!-- Skills End -->
+
+
+                <!-- Education Start -->
+                <div class="container bg-white py-5">
+                    <div class="row px-3">
+                        <div class="col-12">
+                            <h2 class="title position-relative pb-2 mb-4">Expericence</h2>
+                        </div>
+                        <div class="col-12">
+                            <div class="border-left border-primary pt-2 pl-4 ml-2">
+                                <div class="position-relative mb-4">
+                                    <i class="fa fa-arrow-right text-primary position-absolute" style="top: 3px; left: -24px;"></i>
+                                    <h5 class="mb-1">Software Engineer</h5>
+                                    <p class="mb-2">Relo IT LTD. | United Kingdom | <small>2023 - 2025</small></p>
+                                    <p>Created and maintained scalable online apps with HTML/CSS, JavaScript, React.js, and Python that produced user interfaces that were accessible and responsive.</p>
+                                    <p>Utilising Firebase and MongoDB for database administration and real-time data syncing, I developed and consumed RESTful APIs to faciliate frontend-backend connectivity.</p>
+                                    <p>Scikit -learn, Pandas, and TensorFlow were used to engineer backend logic
+                                        and machine learning operations, including models for classification and
+                                        predictive analytics.
+                                    </p>
+                                    <p>Using Matplotlib and Ploty, I produced informative data visualisations and
+                                        dashboards to show non-technical stakeholders business-critical
+                                        information.
+                                    </p>
+                                    <p>CI/CD pipelines were put in place using Github Actions and Heroku to
+                                        guarantee dependable production delivery, and Docker was used for
+                                        containerised development and deployments.
+                                    </p>
+                                    <p>Participated in frequent code reviews and stand-ups, managed tasks using
+                                        Trello/Jira, and worked together on sprints to practise Agile technique.
+                                    </p>
+                                    <p>Using industry best practices, i created and maintained unit tests to
+                                        enhance test coverage and guarantee code quality.
+                                    </p>    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Education End -->
+
+
+                <!-- Portfolio Start -->
+                <div class="container bg-white pt-5 pb-3">
+                    <div class="row px-3">
+                        <div class="col-12">
+                            <h2 class="title position-relative pb-2 mb-4">Portfolio</h2>
+                        </div>
+                        <div class="col-12">
+                            <div class="row portfolio-container">
+                                <div class="col-md-6 mb-4 portfolio-item first">
+                                    <div class="position-relative overflow-hidden mb-2">
+                                        <img class="img-fluid w-100" src="{% static 'img/portfolio-1.jpg' %}" alt="">
+                                        <div class="portfolio-btn d-flex align-items-center justify-content-center">
+                                            <a href="img/portfolio-1.jpg" data-lightbox="portfolio">
+                                                <i class="fa fa-4x fa-plus text-white"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 mb-4 portfolio-item second">
+                                    <div class="position-relative overflow-hidden mb-2">
+                                        <img class="img-fluid w-100" src="{% static 'img/portfolio-2.jpg' %}" alt="">
+                                        <div class="portfolio-btn d-flex align-items-center justify-content-center">
+                                            <a href="img/portfolio-2.jpg" data-lightbox="portfolio">
+                                                <i class="fa fa-4x fa-plus text-white"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 mb-4 portfolio-item first">
+                                    <div class="position-relative overflow-hidden mb-2">
+                                        <img class="img-fluid w-100" src="{% static 'img/portfolio-3.jpg' %}" alt="">
+                                        <div class="portfolio-btn d-flex align-items-center justify-content-center">
+                                            <a href="img/portfolio-3.jpg" data-lightbox="portfolio">
+                                                <i class="fa fa-4x fa-plus text-white"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Portfolio End -->
+
+                <!-- Contact Start -->
+                <div class="container bg-white py-5" id="contact">
+                    <div class="row px-3">
+                        <div class="col-12">
+                            <h2 class="title position-relative pb-2 mb-4">Contact Me</h2>
+                        </div>
+                        <div class="col-12">
+                            <section class="s2">
+                                <div class="container">
+                            
+                                  <form id="contact-form" method="post" action="/">
+                                    {% csrf_token %}
+                                    <label>Name</label>
+                                    <input class="input-field" type="text" name="name">
+                            
+                                    <label>Subject</label>
+                                    <input class="input-field" type="text" name="subject">
+                            
+                                    <label>Email</label>
+                                    <input class="input-field" type="email" name="email">
+                            
+                                    <label>Message</label>
+                                    <input class="input-field" type="message" name="message">
+                            
+                                    <input class="btn btn-primary" type="submit" value="send">
+                                  </form>
+                                </div>
+                            
+                        </div>
+                    </div>
+                </div>
+                <!-- Contact End -->
+                
+                
+                <!-- Footer Start -->
+                <div class="container-fluid bg-white pt-5 px-0">
+                    <div class="container bg-dark text-light text-center py-5">
+                        <div class="d-flex justify-content-center mb-4">
+                            <a class="btn btn-outline-primary btn-square mr-2" href="#"><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-outline-primary btn-square mr-2" href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-outline-primary btn-square mr-2" href="#"><i class="fab fa-linkedin-in"></i></a>
+                            <a class="btn btn-outline-primary btn-square" href="#"><i class="fab fa-instagram"></i></a>
+                        </div>
+                        <p class="m-0">&copy; Designed by <a href="/">Kathan Sheth</a></p>
+                    </div>
+                </div>
+                <!-- Footer End -->
+            </div>
+        </div>
+        
+        <!-- Back to Top -->
+        <a href="#" class="back-to-top"><i class="fa fa-angle-double-up"></i></a>
+        
+        <!-- JavaScript Libraries -->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+        <script src="{% static 'lib/typed/typed.min.js' %}"></script>
+        <script src="{% static 'lib/easing/easing.min.js' %}"></script>
+        <script src="{% static 'lib/waypoints/waypoints.min.js' %}"></script>
+        <script src="{% static 'lib/owlcarousel/owl.carousel.min.js' %}"></script>
+        <script src="{% static 'lib/isotope/isotope.pkgd.min.js' %}"></script>
+        <script src="{% static 'lib/lightbox/js/lightbox.min.js' %}"></script>
+
+        <!-- Contact Javascript File -->
+        <script src="{% static 'mail/jqBootstrapValidation.min.js' %}"></script>
+        <script src="{% static 'mail/contact.js' %}"></script>
+
+        <!-- Template Javascript -->
+        <script src="{% static 'js/main.js' %}"></script>
+    </body>
+</html>
