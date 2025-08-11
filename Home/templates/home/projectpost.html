@@ -1,0 +1,70 @@
+{% load static %}
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Kathan Sheth</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="Free Website Template" name="keywords">
+        <meta content="Free Website Template" name="description">
+
+        <!-- Favicon -->
+        <link href="{% static 'img/favicon.ico' %}" rel="icon">
+
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:wght@400;700&family=Poppins&display=swap" rel="stylesheet"> 
+
+        <!-- Font Awesome -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+        <!-- Libraries Stylesheet -->
+        <link href="{% static 'lib/owlcarousel/assets/owl.carousel.min.css' %}" rel="stylesheet">
+        <link href="{% static 'lib/lightbox/css/lightbox.min.css' %}" rel="stylesheet">
+
+        <!-- Customized Bootstrap Stylesheet -->
+        <link href="{% static 'css/style.css' %}" rel="stylesheet">
+    </head>
+    <body>
+            <div class="container my-2">
+                <div class="project-post">
+                    <h2 class="project-post-title">{{post.title}}</h2>
+                    <p class="project-post-meta">{{post.timestamp}} <a href="#">{{post.author}}</a></p>
+
+                    <img src="{% static 'img/ss1.png' %}" alt="pictures" width="1100" height="500">
+                    <br>
+                    <br>
+                    <br>
+                    <p>{{post.content|safe}}</p>
+                    <img src="{% static 'img/ss2.png' %}" alt="picture" width="1200" height="500">
+                    <p><small>Slug: {{post.slug}}</small></p>
+                    <hr>
+                </div>
+            </div>
+
+                
+                    
+                    
+
+
+
+
+
+
+     <!-- JavaScript Libraries -->
+     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+     <script src="{% static 'lib/typed/typed.min.js' %}"></script>
+     <script src="{% static 'lib/easing/easing.min.js' %}"></script>
+     <script src="{% static 'lib/waypoints/waypoints.min.js' %}"></script>
+     <script src="{% static 'lib/owlcarousel/owl.carousel.min.js' %}"></script>
+     <script src="{% static 'lib/isotope/isotope.pkgd.min.js' %}"></script>
+     <script src="{% static 'lib/lightbox/js/lightbox.min.js' %}"></script>
+
+     <!-- Contact Javascript File -->
+     <script src="{% static 'mail/jqBootstrapValidation.min.js' %}"></script>
+     <script src="{% static 'mail/contact.js' %}"></script>
+
+     <!-- Template Javascript -->
+     <script src="{% static 'js/main.js' %}"></script>
+</body>
+</html>
